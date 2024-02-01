@@ -1,0 +1,40 @@
+---
+# Teamcity Version
+teamcity_server_version: 2023.11.3
+teamcity_server_sha256: 29d163f76a9baf1d630d5275765c72b2a085f7537945d7e7b263b54b1ccece47
+
+# TeamCity User
+teamcity_server_su_user: teamcity
+teamcity_server_su_password: teamcity
+
+# TeamCity Dirs
+teamcity_server_install_dir: /opt
+teamcity_server_dir: "{{ teamcity_server_install_dir }}/TeamCity"
+teamcity_server_data_dir: "{{ teamcity_server_dir }}/BuildServer"
+teamcity_server_plugins_dir: "{{ teamcity_server_data_dir }}/plugins"
+teamcity_server_config_dir: "{{ teamcity_server_data_dir }}/config"
+
+# TeamCity Plugins
+teamcity_server_plugins: []
+
+# Teamcity Licenses
+teamcity_server_license_keys: []
+
+# MySQL Connector
+teamcity_server_mysql_connector_version: 5.1.40
+teamcity_server_mysql_connector_dir: "/opt/mysql-connector"
+
+# MySQL Database User
+teamcity_server_mysql_db_user: teamcity
+teamcity_server_mysql_db_password: teamcity
+teamcity_server_mysql_db_name: teamcity
+
+# MySQL DB type: Available values: local, mysql
+teamcity_server_db_type: "local"
+
+# MySQL DB Server
+teamcity_server_mysql_database_url: localhost
+teamcity_server_mysql_database_port: 3306
+
+# MySQL JDBC Driver Dir
+teamcity_server_mysql_jdbc_dir: "{{ teamcity_server_data_dir }}/lib/jdbc"
